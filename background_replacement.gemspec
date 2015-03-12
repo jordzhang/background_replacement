@@ -7,11 +7,11 @@ require "background_replacement/version"
 Gem::Specification.new do |s|
   s.name        = "background_replacement"
   s.version     = BackgroundReplacement::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BackgroundReplacement."
-  s.description = "TODO: Description of BackgroundReplacement."
+  s.authors     = ["zhiliang"]
+  s.email       = ["jordzhang@gmail.com"]
+  s.homepage    = "https://github.com/jordzhang/background_replacement"
+  s.summary     = "The replacement of video`s background with new background image"
+  s.description = ""
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.1.8"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "carrierwave"
 end

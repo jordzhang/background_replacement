@@ -35,6 +35,11 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     erubis (2.7.0)
     hike (1.2.3)
     i18n (0.7.0)
@@ -84,4 +89,5 @@ PLATFORMS
 
 DEPENDENCIES
   background_replacement!
+  carrierwave
   sqlite3
