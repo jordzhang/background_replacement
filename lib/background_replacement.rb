@@ -43,7 +43,7 @@ module BackgroundReplacement
 
           movie = ::FFMPEG::Movie.new(ouput_path)
 
-          movie.transcode(result_path, (@options || {}).merge({watermark: audio_path}))
+          movie.transcode(result_path, {watermark: audio_path}.merge(@options || {}))
 
           File.rename result_path, replacement_path
         end
