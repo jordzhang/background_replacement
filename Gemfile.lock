@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     background_replacement (0.0.1)
+      carrierwave
       rails (~> 4.1.8)
 
 GEM
@@ -89,5 +90,4 @@ PLATFORMS
 
 DEPENDENCIES
   background_replacement!
-  carrierwave
   sqlite3
