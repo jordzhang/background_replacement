@@ -42,8 +42,8 @@ module BackgroundReplacement
           result_path = File.join(File.dirname(current_path), "tmpfile.mp4")
 
           movie = ::FFMPEG::Movie.new(ouput_path)
-          # puts({watermark: audio_path}.merge(@options || {}))
-          movie.transcode(result_path, "-i #{audio_path}")
+
+          movie.transcode(result_path, ({custom: "-i #{audio_path}"}.merge(@options)))
 
           File.rename result_path, replacement_path
         end
